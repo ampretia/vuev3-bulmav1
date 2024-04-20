@@ -1,9 +1,21 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import GridFlipView from '../views/GridFlipView.vue'
+import FlipView from '../views/FlipView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    {
+      path: '/gridflip',
+      name: 'gridflip',
+      component: GridFlipView
+    },
+    {
+      path: '/flip',
+      name: 'flip',
+      component: FlipView
+    },
     {
       path: '/',
       name: 'home',
